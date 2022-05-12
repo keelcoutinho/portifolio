@@ -234,16 +234,7 @@ a:hover{
     font-family: sans-serif;
     letter-spacing: 1px;
     color: #4682b4;
-}
-
-.card-text p{
-    width: 40%;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    color: #4682b4;
     text-align: justify;
-    
-    
 }
 
 .card-wrapper {
