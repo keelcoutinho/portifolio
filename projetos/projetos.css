@@ -236,12 +236,13 @@ a:hover{
     color: #4682b4;
 }
 
-.card-text ul{
+.card-text p{
     width: 40%;
     font-family: sans-serif;
     letter-spacing: 1px;
     color: #4682b4;
-    align-items: justify-content
+    text-align: justify;
+    
     
 }
 
