@@ -289,6 +289,17 @@ a:hover{
     visibility: visible;
 }
 
+/*FOOTER*/
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b0082;
+}
+
 /*RESPONSIVO*/
 
 @media (max-width: 800px) {
