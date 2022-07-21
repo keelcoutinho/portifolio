@@ -209,14 +209,15 @@ a:hover{
 .card-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .card {
     height: 300px;
     width: 400px;
-    margin: 3rem 0 0;    
+    margin: 2%;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -224,16 +225,28 @@ a:hover{
     justify-content: center;
     align-items: center;
     filter: grayscale(0.5);
-    color: white;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.card-text {
-    width: 40%;
+p {
+    width: 100%;
     font-family: sans-serif;
     letter-spacing: 1px;
     color: #4682b4;
+    margin-left: 10px;
+    font-size: medium;
+}
+
+.btn{    
+    color:#4b0082;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center; 
+    text-decoration: none;
+    margin-left: 10px;
+    padding: auto;
+    font-size: medium;
 }
 
 .card-wrapper {
@@ -243,51 +256,32 @@ a:hover{
     justify-content: center;
     align-items: center;
     position: relative;
+    color: #4b0082;
+    font-size: 15pt;
 }
 
-.card-wrapper::before{
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
-}
 
-.card-wrapper h2 {
-    font-size: 35px;
+h2 {   
     text-transform: uppercase;
     letter-spacing: 4px;
     margin: 0;
     transition: 0.3s;
+    color: #4b0082;
 }
 
-.card-wrapper p {
-    font-size: 0;
-    visibility: hidden;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-}
+
 
 .card:hover {
     filter: unset;
 }
 
-.card:hover > .card-wrapper::before {
-    opacity: 1;
-    width: 350px;
-    height: 250px;
+
+img{
+    width: 150px;
+    border-radius: 10%;
+  
 }
 
-.card:hover > .card-wrapper p {
-    font-size: 14px;
-    opacity: 1;
-    visibility: visible;
-}
 
 /*FOOTER*/
 
@@ -321,19 +315,24 @@ a:hover{
         flex-direction: column-reverse;
     }
 
-    .card {
-        height: 250px;
-        width: 250px;
+    .card {        
+        width: 80%;
     }
-
-    .card-text {
-        width: 90%;
-        margin-top: 2rem;
-        text-align: center;
+    img{
+        width: 100px;
     }
+   
 
     .card:hover > .card-wrapper::before {
         height: 190px;
         width: 190px;
+    }
+
+    footer{
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: small;
     }
 }
