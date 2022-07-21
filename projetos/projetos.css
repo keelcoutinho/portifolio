@@ -28,7 +28,7 @@ h1 {
     letter-spacing: 4px;
 }
 
-h2 {
+.titulo {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
