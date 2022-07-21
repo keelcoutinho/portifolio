@@ -32,9 +32,10 @@ h1 {
     color: #ffffff;
 }
 
-.titulo {
+.card-titulo {
     text-transform: uppercase;
     letter-spacing: 4px;
+    color: #4b0082;
 }
 
 .social-media {
@@ -270,7 +271,7 @@ h2 {
     letter-spacing: 4px;
     margin: 0;
     transition: 0.3s;
-    color: #4b0082;
+   
 }
 
 
