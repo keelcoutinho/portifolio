@@ -28,6 +28,10 @@ h1 {
     letter-spacing: 4px;
 }
 
+.desc{
+    color: #ffffff;
+}
+
 .titulo {
     text-transform: uppercase;
     letter-spacing: 4px;
