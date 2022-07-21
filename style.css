@@ -214,10 +214,10 @@ a:hover{
 }
 
 .card {
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
     margin: 3rem 0 0;
-    background-image: url('https://keelcoutinho.github.io/portifolio/img.png');
+    /* background-image: url('https://ibb.co/98DNmLc'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,51 +229,47 @@ a:hover{
     cursor: pointer;
     transition: 0.3s;
 }
+.perfil{
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: -100px;
+    /* margin-bottom: -50px; */
+    align-items: flex-start;
+}
 
 .card-text {
     width: 40%;
     font-family: sans-serif;
     letter-spacing: 1px;
     color: #4682b4;
+    
+}
+.text{
+    align-items:flex-start;
+    justify-content: flex-start;
+    color: #4b0082;
+    font-size: large;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .card-wrapper {
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    /* justify-content: center; */
     align-items: center;
-    position: relative;
+    position: relative;    
+    /* word-wrap:normal; */
+    
+}
+img{
+    height: 45px;
+    margin: 2px;
 }
 
-.card-wrapper::before{
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.card-wrapper h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.3s;
-}
-
-.card-wrapper p {
-    font-size: 0;
-    visibility: hidden;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-    color: #ffffff;
-}
 
 .card:hover {
     filter: unset;
@@ -285,12 +281,6 @@ a:hover{
     height: 250px;
 }
 
-.card:hover > .card-wrapper p {
-    font-size: 14px;
-    opacity: 1;
-    visibility: visible;
-    color: #ffffff
-}
 
 /*FOOTER*/
 
@@ -315,18 +305,31 @@ a:hover{
         margin-top: 0;
     }
 
-    .card-container {
-        flex-direction: column;
+    .card-container {      
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 5px;
     }
 
+    img{
+        height: 40px;
+        align-items: center;
+    }
     .container .card-container:nth-child(1),
     .container .card-container:nth-child(3) {
         flex-direction: column-reverse;
     }
 
-    .card {
+    /* .card {
         height: 250px;
         width: 250px;
+    } */
+    .perfil{
+        height: 300px;
+        margin-bottom: -160px;
+        margin-top: -180px;
     }
 
     .card-text {
@@ -335,8 +338,16 @@ a:hover{
         text-align: center;
     }
 
-    .card:hover > .card-wrapper::before {
+    /* .card:hover > .card-wrapper::before {
         height: 190px;
         width: 190px;
+    } */
+
+    footer{
+        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: small;
     }
 }
